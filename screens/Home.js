@@ -22,7 +22,9 @@ export default class HomeScreen extends Component {
     axios
       .get(url)
       .then(response => {
-        this.setState({ data: response.data.data });
+      // select the correct option between line 26 and 27
+      // this.setstate({ data: response.data });
+       // this.setState({ data: response.data.data });
       })
       .catch(error => {
         console.log(error.message);
